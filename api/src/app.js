@@ -7,6 +7,7 @@ const routes = require('./routes/index.js');
 require('./db.js');
 
 const server = express();
+// const { PORT } = require ('./src/utils/config');
 
 server.name = 'API';
 
@@ -33,3 +34,4 @@ server.use((err, req, res, next) => { // eslint-disable-line no-unused-vars
 });
 
 module.exports = server;
+
