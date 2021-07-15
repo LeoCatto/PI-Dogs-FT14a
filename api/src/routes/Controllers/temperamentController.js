@@ -9,7 +9,6 @@ async function getTemperaments(req, res) {
   let razasAPI = resp.data;
 
   let temperamentos = [];
-  let filtrado=[];
 
   razasAPI.forEach((raza) => {
     let temp = raza.temperament;
