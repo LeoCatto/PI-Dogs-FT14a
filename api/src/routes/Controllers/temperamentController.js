@@ -4,6 +4,12 @@ const { API_KEY } = process.env;
 const URL = `https://api.thedogapi.com/v1/breeds?api_key=${API_KEY}`;
 
 async function getTemperaments(req, res) {
+  const varD= await getDat();
+
+  res.json(varD);
+}
+
+async function getDat(){
   let todo = `${URL}`;
   let resp = await axios.get(todo);
   let razasAPI = resp.data;
@@ -25,9 +31,10 @@ async function getTemperaments(req, res) {
 
     let tempFilt = await Temperament.findAll({ attributes:["name"] })
 
-  res.json(tempFilt);
+    return tempFilt;
 }
 
 module.exports = {
-  getTemperaments
+  getTemperaments,
+  getDat
 };

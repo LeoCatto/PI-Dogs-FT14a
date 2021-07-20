@@ -1,0 +1,69 @@
+body {
+  background-color: #2b2b2bbb;
+}
+.background {
+  background-color: rgb(49, 49, 49);
+  background-image: url("https://www.mascotahogar.com/Imagenes/fondos-de-perros-labradores.jpg");
+  background-image: no-repeat;
+  background-image: fixed;
+  background-image: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 70px;
+  color: black;
+  margin-top: 30px;
+  margin-right: 500px;
+}
+
+.centrar {
+	float: right;
+	border: solid
+}
+
+.enter {
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  background-color: grey;
+  border-radius: 15px;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 5px;
+  border: solid 1px;
+  border-color: black;
+  margin-top: 500px;
+  width: 300px;
+  margin-right: 1200px;
+}
+#text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  color: black !important;
+  text-decoration: none;
+}
+text:link {
+  text-decoration: none;
+}
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: rgb(0, 0, 0) !important;
+  text-decoration: none;
+  margin-left: 30px;
+  margin-top: 425px;
+  margin-inline-end: 0%;
+}
+.foot {
+  background-color: #000000;
+}

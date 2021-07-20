@@ -1,0 +1,91 @@
+.labels{
+    font-family:  'Montserrat', sans-serif;
+    overflow: hidden;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    color:blanchedalmond ;
+
+}
+.allLabels{
+    margin-top: 80px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: double;
+    padding: 20px;
+    border-color: rgb(229, 143, 157);
+    width: 500px;
+    height: fit-content;
+    margin-left: 500px;
+}
+.allInputs{
+font-family: 'Montserrat', sans-serif;
+color: rgb(107, 105, 105);
+font-weight: 500;
+background-color:white;
+border-radius: 15px;
+font-size: 30px;
+ margin-top:10px;  
+text-decoration: none;
+padding: 5px; 
+border-color: rgb(229, 143, 157);
+width: 200px;
+height: 20px;
+border: 3px solid rgb(229, 143, 157);
+}
+
+.addtemp{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.addtemperaments{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(107, 105, 105);
+    border-radius: 15px;
+    font-size: 15px;
+    margin-top:20px; 
+    text-decoration: none;
+    padding: 5px;
+    border-color: black;
+    width: 100;
+    margin-right: 30px;
+    overflow: hidden;
+    height: 55px;
+    border: 3px solid rgb(229, 143, 157);
+    
+
+}
+#title{
+    font-family: 'Montserrat', sans-serif;
+    color: blanchedalmond;
+    
+    list-style-type: none;
+}
+.addButton{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(107, 105, 105);
+    background-color:white;
+    border-radius: 15px;
+    font-size: 30px;
+    margin-top:10px; 
+    text-decoration: none;
+    padding: 5px;
+    border: solid 1px;
+    border-color: black;
+    width: 300px;
+    border: 3px solid rgb(229, 143, 157);;
+}
+
+.addButton:hover {background-color: blanchedalmond;}
+
+.addButton:active {
+    background-color: blanchedalmond;
+      box-shadow: 0 3px rgb(180, 178, 178);
+  transform: translateY(4px);
+}
+
+.chosen {
+color: blanchedalmond;
+}

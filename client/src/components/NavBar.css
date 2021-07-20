@@ -1,0 +1,42 @@
+.navbar{
+    
+    overflow-y: hidden ! important;
+    overflow-x: hidden ! important; 
+    background-color: #f8f8f8;
+ background-image: url( 'https://cdn.pixabay.com/photo/2020/06/02/12/19/dog-digital-paper-5250754_1280.jpg');
+    background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:100px;
+    border-bottom-style: double;
+    border-bottom-color: rgb(229, 143, 157);
+}
+.list{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.list-item{
+    font-family:  'Montserrat', sans-serif;
+    color: grey;
+    background-color: white;
+    border-radius: 15px;
+    font-size: 50px;
+    margin-top:10px; 
+    text-decoration: none;
+    padding: 5px;
+    border: 2px solid black;
+}
+.list-item:hover {background-color: blanchedalmond;}
+
+.list-item:active {
+    background-color: blanchedalmond;
+      box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.list-item:focus{
+border-color: rgb(229, 143, 157);
+background-color: blanchedalmond;
+} 

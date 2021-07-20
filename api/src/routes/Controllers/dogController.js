@@ -31,8 +31,9 @@ async function getDogs(req, res ) {
   }
 
   let resp = await axios.get(todo);
-  let razasAPI = resp.data.splice(0, 8);
+  let razasAPI = resp.data;
   let allRazas = razasDB.concat(razasAPI);
+  // let eigth= allRazas.splice(0, 8);
   let resultadoFinal = [];
 
   allRazas.forEach((raza) => {
