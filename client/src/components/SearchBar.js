@@ -2,6 +2,7 @@ import React from "react";
 import {useState } from "react";
 import { useDispatch } from "react-redux";
 import { getDogs } from "../Actions";
+import './SearchBar.css';
 
 export default function SearchBar() {
 
@@ -26,7 +27,7 @@ export default function SearchBar() {
 
 
   return (
-    <div>
+    <div id='searchbar'>
       <input
         type="text"
         value={input}

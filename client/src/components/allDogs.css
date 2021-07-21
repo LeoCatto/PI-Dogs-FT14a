@@ -1,0 +1,8 @@
+#myVsApi{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    margin-right: 10px;
+    background-color: #0D1117;;
+}

@@ -15,7 +15,7 @@ function sacarData(dog){
     }
       
     const img = 'https://cdn2.thedogapi.com/images/' + dog.reference_image_id + '.jpg' ||
-    'https://www.happets.com/blog/wp-content/uploads/2021/01/ryan-stone-FTzRYeD5lAs-unsplash-1180x787.jpg'
+    'https://imagendeperros.com/wp-content/uploads/2016/01/Fotos-de-perritos-con-carita-triste.jpg'
 
     return {id,name,height,weight,years,arregloT,img}
 }

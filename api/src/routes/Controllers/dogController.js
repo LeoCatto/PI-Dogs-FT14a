@@ -25,7 +25,7 @@ async function getDogs(req, res ) {
   } else {
     todo = `${URL2}&name=${name}`;
     razasDB = await Dog.findAll({
-      where: { name: { [Op.like]: `%${name}%` } },
+      where: { name: { [Op.iLike]: `%${name}%` } },
       include: Temperament,
     });
   }
@@ -75,7 +75,13 @@ async function getDogParam(req, res) {
 
 async function postDog(req, res) {
   const { name, height, weight, years, temperament } = req.body;
-  const raza = await Dog.create({ name, height, weight, years });
+  const raza = await Dog.create({ 
+    name, 
+    height, 
+    weight, 
+    years,
+    img:'https://imagendeperros.com/wp-content/uploads/2016/01/Fotos-de-perritos-con-carita-triste.jpg'
+  });
 
   temperament.forEach(async (temp) => {
     const temperamento = await Temperament.findOrCreate({

@@ -40,6 +40,53 @@ export function getTemperaments() {
   };
 }
 
+export function getOrder(value) {
+	if (value === 'ASC') {
+		return {
+			type: 'ASC',
+		};
+	} else {
+		return {
+			type: 'DESC',
+		};
+	}
+}
+export function getOrderByWeight(value) {
+	if (value === 'MINMAX') {
+		return {
+			type: 'MINMAX',
+		};
+	} else {
+		return {
+			type: 'MAXMIN',
+		};
+	}
+}
+export function getSource(value) {
+	if (value === 'DB') {
+		return {
+			type: 'DB',
+		};
+	} else if (value === 'API'){
+		return {
+			type: 'API',
+		};
+	}else {
+		return (getDogs())
+	}
+}
+export function setLoading() {
+	return {
+		type: 'SET_LOADING',
+	};
+}
+export function filter(value) {
+	return {
+		type: 'FILTER',
+		payload: value,
+	};
+}
+
 
 
 

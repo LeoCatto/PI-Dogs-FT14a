@@ -91,6 +91,13 @@ function CreateDog(props) {
         console.log(err.message)
         alert('We could not create breed. Please try again.');
     }
+    setInput({
+      name: "",
+      height: "",
+      weight: "",
+      years: "",
+      temperament: [],
+    })
   }
 
 
@@ -105,7 +112,7 @@ function CreateDog(props) {
     let names = [];
     temperaments.forEach((t) => {
       arr.forEach((name) => {
-        if (parseInt(name) === t.name) {
+        if (name === t.name) {
           names.push(t.name);
         }
       });
@@ -160,20 +167,17 @@ function CreateDog(props) {
         />
         {errors.weight && <p className="danger">{errors.weight}</p>}
         <label className="labels" for="life_span">
-          years
+          Years
         </label>
         <input
           className="allInputs"
           type="text"
           name="years"
+          placeholder="years"
           required="require"
           value={input.years}
           onChange={handleInput}
         />
-        <label className='labels' for='img'>
-          Imagen
-        </label>
-
         {errors.years && <p className="danger">{errors.years}</p>}
         <div>
           <p className="style">Temperaments</p>
@@ -184,13 +188,6 @@ function CreateDog(props) {
             value={input.temperament}
             className="bt_chosen"
           >
-            {/* {props.temperament &&
-              props.temperament.map((breed) => (
-                <option value={breed.id}>
-                  {breed.temperament}
-                  {breed.name}
-                </option>
-              ))} */}
             <option>Select</option>
             {temperaments.map((e) => (
               <option value={e.name} key={e.id}>
@@ -204,13 +201,13 @@ function CreateDog(props) {
             <p id={t} className="tipaso">
               {getNames([t])}{" "}
               <button type="button" onClick={(e) => deleteTemp(e, t)}>
-                -x-
+                {t.name}-x-
               </button>
             </p>
           ))}
         </div>
 
-        <button type="submit">Submit</button>
+        <button className='facha' type="submit">Submit</button>
       </form>
     </div>
   );

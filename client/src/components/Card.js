@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import "./Card.css";
 
 export default function Card({ name, image, temperaments, id }) {
-  
+
   return (
     <div className="card">
       <NavLink to={`/dogs/${id}`}>
