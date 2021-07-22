@@ -27,9 +27,9 @@ function validate(input) {
     errors.height = "";
   }
   if (!input.years) {
-    errors.years = "You must type a life span";
+    errors.years = "You must type a Years";
   } else if (!/\d{1,2}-\d{1,2}/g.test(input.years)) {
-    errors.years = "Life span must be a range. Example: '10-15'";
+    errors.years = "Years must be a range. Example: '10-15'";
   } else {
     errors.years = "";
   }

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch, connect } from 'react-redux';
-import { getOrder, getOrderByWeight, getSource, getTemperaments, filter } from '../Actions/index';
+import { getOrder, getOrderByWeight, getSource, getTemperaments, filter, getOrderByYears } from '../Actions/index';
 import './Filter.css';
 function Filter() {
 	const dispatch = useDispatch();
@@ -46,6 +46,9 @@ function Filter() {
 		handleClick();
 	}
 
+	function handleOrderByYears(e) {
+		dispatch(getOrderByYears(e.target.value));
+	}
 	function handleOrder(e) {
 		dispatch(getOrder(e.target.value));
 	}
@@ -81,6 +84,13 @@ function Filter() {
 					<option value='DB'>DB</option>
 					<option value='API'>API</option>
 					<option value='ALL'>ALL</option>
+				</select>
+			</form>
+			<form className='container'>
+				<p className='p'>By</p>
+				<select  className='input' onChange={handleOrderByYears}>
+					<option value=''>Select</option>
+					<option value='MAXYEARS'>yEARS</option>
 				</select>
 			</form>
 			<form onSubmit={handleSubmit} className='package'>

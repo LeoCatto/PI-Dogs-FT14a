@@ -1,4 +1,5 @@
 .card {
+  float: left;
   margin: 20px;
   width: 500px;
   height: fit-content;

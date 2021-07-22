@@ -44,12 +44,21 @@
               a.name.toLowerCase() < b.name.toLowerCase() ? 1 : -1
             ),
         };
+        case 'MAXYEARS':
+          return{
+            ...state,
+            filtereddogs:state.filtereddogs
+            .filter((b)=> b.years !==null)
+            .sort((a,b)=>
+            a.years.split(" ")[2]>b.years.split(" ")[2]?1:-1
+            )
+          }
       case "MINMAX":
         return {
           ...state,
           filtereddogs: state.filtereddogs
             .filter((b) => b.weight !== null)
-            .sort((a, b) => (a.weight.slice() < b.weight ? 1 : -1)),
+            .sort((a, b) => (a.weight < b.weight ? 1 : -1)),
         };
       case "MAXMIN":
         return {

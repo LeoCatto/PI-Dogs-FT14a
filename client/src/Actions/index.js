@@ -62,6 +62,13 @@ export function getOrderByWeight(value) {
 		};
 	}
 }
+export function getOrderByYears(value){
+	if(value==='MAXYEARS'){
+		return{
+			type:'MAXYEARS'
+		}
+	}
+}
 export function getSource(value) {
 	if (value === 'DB') {
 		return {

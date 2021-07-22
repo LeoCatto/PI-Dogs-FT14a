@@ -1,87 +1,60 @@
-body{
-  background-color:rgb(54, 53, 53);
- 
+body {
+  background-color: rgb(54, 53, 53);
 }
 
-  .barra{
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;;
-      height: 42.5px;
-      line-height: 30px;
-      outline: 0;
-      border: 0;
-      display: none;
-      font-size: 1em;
-      border-radius: 20px;
-      padding: 0 20px;
-  }
-
 .pageNumbers {
- list-style: none;
- display: flex;
- justify-content: center;
-
+  list-style: none;
+  display: flex;
+  justify-content: center;
 }
 
 .pageNumbers li {
- padding: 10px;
- border-radius: 15px;
- cursor: pointer;
+  padding: 10px;
+  border-radius: 15px;
+  cursor: pointer;
 }
 
 .pageNumbers li.active {
- background-color: white;
- color: black;
+  background-color: white;
+  color: black;
 }
 
 .pageNumbers li button {
- background-color: transparent;
- border: none;
- color: black;
- font-size: 1.5rem;
- cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: black;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 .pageNumbers li button:hover {
- background-color: black;
- color: white;
+  background-color: black;
+  color: white;
 }
 .pageNumbers li button:focus {
- outline: none;
+  outline: none;
 }
 
-.cartas{
-  width: 90%;
-	max-width: 1240px;
-	margin: 0 auto;
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: auto;
-	grid-gap: 20px;
-}
-
-.cajitas{
-  display: flex;
+.conteinerdog {
   flex-direction: row;
- flex-wrap: wrap;
- justify-content: center;
-}
-.conteinerdog{
-  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   display: flex;
+  align-items: center;
+}
+
+.cajitas {
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.loading{
+.loading {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 50px;
 }
-.falla{
+.falla {
   display: flex;
   justify-content: center;
 }
-
