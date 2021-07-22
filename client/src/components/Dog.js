@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { getDogDetail } from "../Actions/index";
+import { NavLink } from "react-router-dom";
 import "./Dog.css";
 import NavBar from "./NavBar";
 import { useParams } from "react-router-dom";
@@ -32,7 +33,6 @@ function Dog(props) {
       return props.dogsDetail?.height;
     }
   }
-console.log("dame perros",props.dogsDetail)
   return (
     <div>
       {props.dogsDetail["name"]?
@@ -40,7 +40,9 @@ console.log("dame perros",props.dogsDetail)
         <NavBar />
         <div id="cardContainer">
           <div className="info">
+            <NavLink to='/home'>
             <div className="card-title">{props.dogsDetail.name}</div>
+            </NavLink>
             <div className="details">
                <div>
                 🦴Temperament:{" "}
@@ -60,10 +62,14 @@ console.log("dame perros",props.dogsDetail)
           </div>
         </div>
         </div>
-      : <div>"Loading"</div>}
-      
-      
-      
+      : <div className='load'>
+          <img 
+          alt='Imagen no encontrada' 
+          width='300' 
+          height='200' 
+          src='https://media.tenor.com/images/ffb0838d6924a88d142cf523fffe3bc6/tenor.gif'>
+          </img>
+        </div>}
     </div>
   );
 }

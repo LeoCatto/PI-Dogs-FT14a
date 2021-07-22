@@ -83,7 +83,7 @@ export function setLoading() {
 export function filter(value) {
 	return {
 		type: 'FILTER',
-		payload: value,
+		payload: value
 	};
 }
 

@@ -41,7 +41,7 @@ async function getDogs(req, res ) {
   });
 
   if (name && resultadoFinal.length == 0) {
-    return res.status(404).json({
+    return res.status(400).json({
       message: `No se encontraron resultados para la búsqueda '${name}'`,
     });
   }
@@ -80,7 +80,6 @@ async function postDog(req, res) {
     height, 
     weight, 
     years,
-    img:'https://imagendeperros.com/wp-content/uploads/2016/01/Fotos-de-perritos-con-carita-triste.jpg'
   });
 
   temperament.forEach(async (temp) => {

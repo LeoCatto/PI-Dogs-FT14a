@@ -2,12 +2,7 @@
     
     overflow-y: hidden ! important;
     overflow-x: hidden ! important; 
-    background-color: #f8f8f8;
- background-image: url( 'https://cdn.pixabay.com/photo/2020/06/02/12/19/dog-digital-paper-5250754_1280.jpg');
-    background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-color: #d1d1d1;
     height:100px;
     border-bottom-style: double;
     border-bottom-color: rgb(229, 143, 157);
@@ -29,7 +24,7 @@
     padding: 5px;
     border: 2px solid black;
 }
-.list-item:hover {background-color: blanchedalmond;}
+.list-item:hover {background-color: rgb(165, 163, 163);}
 
 .list-item:active {
     background-color: blanchedalmond;

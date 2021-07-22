@@ -1,114 +1,87 @@
 body{
-    /*  overflow-y: hidden ! important;
-     overflow-x: hidden ! important; */
-     background-color:#3b3b3b;
-    /*  background-image: url('https://cdn.pixabay.com/photo/2016/04/25/20/55/colorful-1353143_960_720.png');
-     background-size: cover;
-     background-size: cover;
-     background-repeat: no-repeat;
-     background-position: center;
-     height:100% */
-       } 
-     /* background: #eacda3;  /* 
-     background: -webkit-linear-gradient(to right, #d6ae7b, #eacda3);  
-     background: linear-gradient(to right, #d6ae7b, #eacda3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
-     .all{
-         display: flex;
-         flex-direction: row-reverse;
-         justify-content: space-evenly;
-         z-index: 1;
-         background-color: #0D1117;;
-     } 
-     .cards{
-         display: flex;
-         flex-direction: column;
-         align-items: center;    
-         margin-top: 0px;
-     }
-     
-     #searchbar{
-         margin-top: 50px;
-         position: relative;
-         top: 50%;
-         left: 50%;
-         transform: translate(-50%,-50%);
-         transition: all 1s;
-         width: 50px;
-         height: 50px;
-         background: white;
-         box-sizing: border-box;
-         border-radius: 25px;
-         border: 2px solid rgb(229, 143, 157);
-         padding: 5px;
-         
-     }
-     
-     .barra{
-         position: absolute;
-         top: 0;
-         left: 0;
-         width: 100%;;
-         height: 42.5px;
-         line-height: 30px;
-         outline: 0;
-         border: 0;
-         display: none;
-         font-size: 1em;
-         border-radius: 20px;
-         padding: 0 20px;
-     }
-     
-     .fa{
-         box-sizing: border-box;
-         padding: 10px;
-         width: 42.5px;
-         height: 42.5px;
-         position: absolute;
-         top: 0;
-         right: 0;
-         border-radius: 50%;
-         color: black;
-         text-align: center;
-         font-size: 1.2em;
-         transition: all 1s;
-     }
+  background-color:rgb(54, 53, 53);
+ 
+}
 
- .pageNumbers {
-    list-style: none;
-    display: flex;
-    justify-content: center;
+  .barra{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;;
+      height: 42.5px;
+      line-height: 30px;
+      outline: 0;
+      border: 0;
+      display: none;
+      font-size: 1em;
+      border-radius: 20px;
+      padding: 0 20px;
+  }
 
-  }
-  
-  .pageNumbers li {
-    padding: 10px;
-    border-radius: 15px;
-    cursor: pointer;
-  }
-  
-  .pageNumbers li.active {
-    background-color: white;
-    color: black;
-  }
-  
-  .pageNumbers li button {
-    background-color: transparent;
-    border: none;
-    color: black;
-    font-size: 1.5rem;
-    cursor: pointer;
-  }
-  .pageNumbers li button:hover {
-    background-color: black;
-    color: white;
-  }
-  .pageNumbers li button:focus {
-    outline: none;
-  }
-  
-  .cartas{
-    display: flex;
-    flex-direction: column;
-    align-items: center;    
-    margin-top: 0px;
-      }
+.pageNumbers {
+ list-style: none;
+ display: flex;
+ justify-content: center;
+
+}
+
+.pageNumbers li {
+ padding: 10px;
+ border-radius: 15px;
+ cursor: pointer;
+}
+
+.pageNumbers li.active {
+ background-color: white;
+ color: black;
+}
+
+.pageNumbers li button {
+ background-color: transparent;
+ border: none;
+ color: black;
+ font-size: 1.5rem;
+ cursor: pointer;
+}
+.pageNumbers li button:hover {
+ background-color: black;
+ color: white;
+}
+.pageNumbers li button:focus {
+ outline: none;
+}
+
+.cartas{
+  width: 90%;
+	max-width: 1240px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-gap: 20px;
+}
+
+.cajitas{
+  display: flex;
+  flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: center;
+}
+.conteinerdog{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.loading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.falla{
+  display: flex;
+  justify-content: center;
+}
+

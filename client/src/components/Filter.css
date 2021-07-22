@@ -26,27 +26,27 @@
 }
 
 .p {
-	color: #fff;
-	font-size: 17px;
-	padding: 1vh;
-	margin-top: 1vh;
-	margin-left: 1vh;
-    border-radius: 4px;
-	background: #1888ff;
-	box-shadow: 5px 19px 23px 8px rgba(0, 0, 0, 0.53);
+    color: black;
+    font-size: 17px;
+    padding: 1vh;
+    margin-top: 1vh;
+    margin-left: 1vh;
+    border-radius: 10px;
+    background: grey;
+    box-shadow: 5px 19px 23px 8px rgba(0, 0, 0, 0.53);
 }
 .input{
-	font-size: 15px;
-	padding-left: 1vh;
-	margin-top: 1vh;
-	margin-left: 1vh;
-    margin-bottom: 1vh;
-    border-radius: 4px;
-	box-shadow: 5px 19px 23px 8px rgba(0, 0, 0, 0.53);
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-weight: 500;
+    border-radius: 15px;
+    border: black;
+    padding: 5px;
+    
 }
 .btn {
-	margin-top: 5vh;
-	margin-left: 2vh;
+    margin-top: 5vh;
+    margin-left: 2vh;
     padding: 8px 20px;
     border-radius: 4px;
     outline: none;
@@ -55,7 +55,7 @@
     color: #fff;
     cursor: pointer;
     background-color: var(--primary);
-	box-shadow: 5px 19px 23px 8px rgba(0, 0, 0, 0.53);
+    box-shadow: 5px 19px 23px 8px rgba(0, 0, 0, 0.53);
 }
 .btn:hover {
     padding: 6px 18px;

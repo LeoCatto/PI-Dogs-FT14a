@@ -1,60 +1,61 @@
 .card {
-    margin: 20px;
-    width: 500px;
-    height:fit-content;
-    border-style: double;
-    border-color:  rgb(229, 143, 157);
-    overflow-y: hidden ! important;
-    overflow-x: hidden ! important; 
-    background-color: #f8f8f8;
-    background-image: url( 'https://cdn.pixabay.com/photo/2020/06/02/12/19/dog-digital-paper-5250754_1280.jpg');
-    background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  li{
-    list-style: none;
-  }
+  margin: 20px;
+  width: 500px;
+  height: fit-content;
+  border-style: solid;
+  border-color: black;
+  overflow-y: hidden !important;
+  overflow-x: hidden !important;
+  background-color: grey;
+  /* background-image: url( 'https://cdn.pixabay.com/photo/2020/06/02/12/19/dog-digital-paper-5250754_1280.jpg');
+  background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; */
+}
 
-  a{
-    text-decoration: none !important;
-  }
-  .card-title {
-    margin-top: 10px;
-    text-align: center;
-    text-decoration: none !important;
-    font-family:  'Montserrat', sans-serif;
-    font-size:50px;
-    color: black;
- }
-  
-  .card-body {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 0px !important;
-    padding-top: 0px !important;
-    font-family:  'Montserrat', sans-serif;
-    color: black;
-    font-size: 40px;
-    text-decoration: none;
-  }
-  .image{
-    margin: 10px;
-    padding: 10px;
-  }
-  .temperaments{
-    background-color: blanchedalmond;
-    width: 120px;
-    height:fit-content;
-    font-size: 15px;
-    border-style:dotted;
-    border-color:  black;
-    margin-top: 20px;
-    margin-right: 20px;
-    text-align: center;
-    font-weight: 500;
-    color: black;
-  }
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none !important;
+}
+.card-title {
+  margin-top: 10px;
+  text-align: center;
+  text-decoration: none !important;
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+  color: black;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 0px !important;
+  padding-top: 0px !important;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  font-size: 40px;
+  text-decoration: none;
+}
+.image {
+  margin: 10px;
+  padding: 10px;
+}
+.temperaments {
+  background-color: white;
+  width: 120px;
+  height: fit-content;
+  font-size: 15px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  margin-top: 20px;
+  margin-right: 20px;
+  text-align: center;
+  font-weight: 500;
+  color: black;
+}

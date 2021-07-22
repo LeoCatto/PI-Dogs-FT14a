@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector, useDispatch, connect } from 'react-redux';
 import { getOrder, getOrderByWeight, getSource, getTemperaments, filter } from '../Actions/index';
 import './Filter.css';
 function Filter() {
@@ -21,7 +21,7 @@ function Filter() {
 		let filtereddogs = [];
 		dogs?.forEach((b) => {
 			if (b.id.length > 6) {
-				b.temperaments.map((t) => (t.name === selectedTemp ? filtereddogs.push(b) : null));
+				b.arregloT.map((t) => (t === selectedTemp ? filtereddogs.push(b) : null));
 			} else {
 				if (b.arregloT.includes(selectedTemp)) {
 					filtereddogs.push(b);
@@ -32,9 +32,11 @@ function Filter() {
 		});
 
 		dispatch(filter(filtereddogs));
+        setSelectedTemp('')
 	}
 
 	function handleChangeTemp(e) {
+        e.preventDefault();
 		setSelectedTemp(e.target.value);
 	}
 
@@ -102,4 +104,19 @@ function Filter() {
 	);
 }
 
-export default Filter;
+const mapStateToProps = (state) => {
+    return {
+      dogs: state.dogs,
+      temperaments:state.temperaments
+    };
+  };
+  
+  const mapDispatchToProps = (dispatch) => {
+    return {
+      getTemperaments: (dogs) => {
+        dispatch(getTemperaments(dogs));
+      },
+    };
+  };
+  
+  export default connect(mapStateToProps, mapDispatchToProps)(Filter);

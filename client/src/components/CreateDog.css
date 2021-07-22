@@ -3,7 +3,7 @@
     overflow: hidden;
     margin-bottom: 0%;
     padding-bottom: 0%;
-    color:blanchedalmond ;
+    color:white ;
 
 }
 .allLabels{
@@ -12,27 +12,28 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: double;
+    border: solid;
     padding: 20px;
-    border-color: rgb(229, 143, 157);
+    border-color: black;
     width: 500px;
     height: fit-content;
     margin-left: 500px;
+    background-color: grey;
 }
 .allInputs{
-font-family: 'Montserrat', sans-serif;
-color: rgb(107, 105, 105);
-font-weight: 500;
-background-color:white;
-border-radius: 15px;
-font-size: 30px;
- margin-top:10px;  
-text-decoration: none;
-padding: 5px; 
-border-color: rgb(229, 143, 157);
-width: 200px;
-height: 20px;
-border: 3px solid rgb(229, 143, 157);
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(107, 105, 105);
+    font-weight: 500;
+    background-color:white;
+    border-radius: 15px;
+    font-size: 15px;
+    margin-top:10px;  
+    text-decoration: none;
+    padding: 5px; 
+    /* border-color: rgb(229, 143, 157); */
+    width: 200px;
+    height: 20px;
+    /* border: 3px solid black; */
 }
 
 .addtemp{
@@ -53,13 +54,13 @@ border: 3px solid rgb(229, 143, 157);
     margin-right: 30px;
     overflow: hidden;
     height: 55px;
-    border: 3px solid rgb(229, 143, 157);
+    border: 3px solid white;
     
 
 }
 #title{
     font-family: 'Montserrat', sans-serif;
-    color: blanchedalmond;
+    color: white;
     
     list-style-type: none;
 }
@@ -75,17 +76,47 @@ border: 3px solid rgb(229, 143, 157);
     border: solid 1px;
     border-color: black;
     width: 300px;
-    border: 3px solid rgb(229, 143, 157);;
+    border: 3px solid white;
 }
 
-.addButton:hover {background-color: blanchedalmond;}
+.addButton:hover {background-color: white;}
 
 .addButton:active {
-    background-color: blanchedalmond;
+    border-radius: 13px;
+    background-color: white;
       box-shadow: 0 3px rgb(180, 178, 178);
   transform: translateY(4px);
 }
 
-.chosen {
-color: blanchedalmond;
+.bt_chosen {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(107, 105, 105);
+    font-weight: 500;
+    background-color:white;
+    margin-top:10px;  
+    text-decoration: none;
+    padding: 5px; 
+    width: 200px;
+    height: 30px;
+    border: 3px solid black(229, 143, 157);
+}
+
+.style{
+    font-family:  'Montserrat', sans-serif;
+    overflow: hidden;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.facha{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-weight: 500;
+    border-radius: 15px;
+    border: black;
+    padding: 5px;
+    
 }

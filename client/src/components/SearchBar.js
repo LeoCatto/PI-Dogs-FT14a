@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {useState } from "react";
 import { useDispatch } from "react-redux";
 import { getDogs } from "../Actions";
@@ -28,14 +28,14 @@ export default function SearchBar() {
 
   return (
     <div id='searchbar'>
-      <input
+      <input className='busqueda'
         type="text"
         value={input}
         placeholder="Type the dog"
         onChange={(e)=>sacarDog(e)}
       />
-      <button type='button' onClick={onClickHandle}>Search</button>
-      <button type='button' onClick={onClickRefresh}>Refresh</button>
+      <button className='boton' type='button' onClick={onClickHandle}>Search</button>
+      <button className='boton' type='button' onClick={onClickRefresh}>Refresh</button>
 
     </div>
   );
