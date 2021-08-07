@@ -90,7 +90,7 @@ function Filter() {
 				<p className='p'>By</p>
 				<select  className='input' onChange={handleOrderByYears}>
 					<option value=''>Select</option>
-					<option value='MAXYEARS'>yEARS</option>
+					<option value='MAXYEARS'>Years</option>
 				</select>
 			</form>
 			<form onSubmit={handleSubmit} className='package'>
